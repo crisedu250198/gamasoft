@@ -1,38 +1,390 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*Global ----------------------------*/
+* {
+  margin: 0px;
+  padding: 0px; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+p {
+  margin: 0rem;
+  text-decoration: none; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
+  font-style: normal;
+  background: #f3f3f3; }
+
+h3 {
+  font-size: 20px; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+
+/* HEADER -----------------------------*/
+
+.containerHeader{
+  background-image: linear-gradient(#010449, #05479D);
+}
+.containerTop {
+  width: 100%;
+  float: right;
+  
+  align-items: center; }
+
+.containerTop__Nav {
+  margin-top: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.nav-link--img{
+  width: 100%;
+  max-height: 20px;
+  object-fit: contain;
+
+}
+.btn-menu--size{
+  width: 100%;
+  max-height: 23px;
+}
+
+
+.btn-primary--cfg{
+  background-color: inherit;
+
+}
+
+.offcanvas-end{
+  width: 50%;
+}
+
+.offcanvas--back{
+  background-image: linear-gradient(#010449, #05479D);
+}
+
+.offcanvas-header{
+  color:#fff;
+  border-bottom: 1px solid #fff;
+}
+
+.menuResponsive{
+  display: none;
+}
+
+.pad-0{
+  padding-left: 0;
+}
+  .containerTop__Nav ul li {
+    display: inline-block; }
+    .containerTop__Nav ul li a {
+      color: white;
+      display: block;
+      transition: all 0.4s linear;
+      text-decoration: none;
+      border-radius: 5px; }
+    .containerTop__Nav ul li a:hover {
+      background: #4a4a4a; }
+  .containerTop__Nav img {
+    width: 23px;
+    height: 23px; }
+
+.containerTop__ListNavLeft {
+  float: left;
+  list-style: none;
+  padding: 10px; }
+
+.containerBot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  }
+  .containerBot ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px; }
+    .containerBot ul li a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      transition: all 0.4s linear;
+      border-radius: 5px; }
+    .containerBot ul li a:hover {
+      background: #4a4a4a; }
+
+.containerBot__Logo {
+ 
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  width: 200px;
+  height: 80px;
+  transition: all 0.4s linear;
+  border-radius: 5px; }
+
+.containerBot__Logo:hover {
+  transform: scale(1.1, 1.1); 
+   }
+
+.containerBot__Search {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid black; }
+  .containerBot__Search img {
+    width: 23px;
+    height: 23px; }
+
+.search__Input {
+  width: 50rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px; }
+
+.search__InputBtn {
+  height: 2.5rem;
+  border: none;
+  background: none;
+  margin-left: -40px;
+  cursor: pointer; }
+
+.containerBot__ContainerIconos {
+  
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .containerBot__ContainerIconos a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px;
+    align-items: center;
+    }
+  .containerBot__ContainerIconos a:hover {
+    transform: scale(1.2, 1.2);
+    color: white;  }
+  .containerBot__ContainerIconos--btn button {
+    background: none;
+    border: none;
+    display: block;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    padding: 20px; }
+    .containerBot__ContainerIconos--btn button:hover {
+    transform: scale(1.2, 1.2);  }
+    .containerBot__ContainerIconos img {
+    width: 40px;
+    height: 40px; }
+    .containerBot__ContainerIconos--btn  p{
+      color: white;
+    }
+.modalCarrito{
+  width: 20%;
+  background-image: linear-gradient(#010449, #05479D);
+} 
+.modalCarrito--Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.modalCarrito--Header h5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.modalCarrito--Header p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.modalCarrito--body{
+  display: grid;
+  grid-template-areas: "productos"
+ "total";
+  grid-template-columns: 1fr;
+  grid-template-rows: 91% 9% }
+  .modalCarrito--body_Productos{
+    grid: "productos";
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .modalCarrito--body_Productos::-webkit-scrollbar{
+    width: 7px;
+  }
+  .modalCarrito--body_Productos::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 5px;
+  }
+  .modalCarrito--body_Total{
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: white;
+    border:  3px solid black ;
+  }
+  .modalCarrito--body_Total h3{
+    font-size: 2rem;
+    color: black;
+  }
+  .modalCarrito--body_Total button{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color:#05479D;
+    padding: 10px 10px 10px 10px;
+  }
+  .modalCarrito--body_Total button:hover{
+    transform: scale(1.1, 1.1);
+    background: greenyellow;
+  }  
+.cardCarrito{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 11.25%;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #CCC; 
+  margin-bottom: 10px;
+} 
+.cardCarrito img{
+  height: 80%;
+  width: 20%;
+  margin-left: 10px;
+  object-fit: contain;
+}
+.cardCarrito h3{
+  padding: 12px 5px 0px 12px;
+  font-weight: 500;
+  width: 30rem;
+  font-size: 14px;
+  color: black;
+}
+.cardCarrito button{
+  width: 90px;
+  height: 35px;
+  font-size: 20px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  margin-top: -5px;
+  margin-right: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color:#05479D;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+.cardCarrito button:hover {
+  transform: scale(1.1, 1.1);
+  background: #db4a39; }
+  .cardCarrito__info-Precio{
+    background-color: #05479D;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px 5px 0px 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .cardCarrito__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
   }
-}
+  .cardCarrito__info h4 {
+    font-size: 17px;
+  }
+  .cardCarrito__info h5 {
+    font-size: 16px;
+  }
+  .cardCarrito__info h6 {
+    font-size: 15px;
+  }
+  /* ventana emergente log in */
+  #modal-body--input {
+    margin-bottom: 0.5rem; }
+    #modal-body--input input {
+      width: 100%;
+      margin-bottom: 0.5rem; }
+  
+  .modal-body--button {
+    margin-top: 1rem;
+    text-align: center; }
+    .modal-body--button input {
+      width: 50%;
+      height: 2.5rem;
+      background-color: #0c487a;
+      border: none;
+      border-radius: 5px;
+      color: #fff; }
+      .modal-body--button input:hover{
+        background-color: #2983BC;
+      }
+  .backgroundRegistrarse{
+    background-color: #2983BC;
+  }
+  .backgroundRegistrarse:hover{
+    background-color: greenyellow;
+    color:white;
+    border: 1px solid greenyellow;
+  }    
+  .backgroundFacebook{
+    background-color: #3b5998;
+  }
+  .backgroundFacebook:hover{
+    background-color: #f8e2e2;
+    color:#3b5998;
+    border: 1px solid #3b5998;
+  }
+  .backgroundGoogle{
+    background-color: #db4a39;
+  }
+  .backgroundGoogle:hover{
+    background-color: #f8e2e2;
+    color:#db4a39;
+    border: 1px solid #db4a39;
+  }
+  .modal-footer {
+    display: flex;
+    flex-direction: column; }
+    .modal-footer input {
+      width: 70%;
+      height: 3rem;
+      margin-bottom: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      color: #fff; }
+  .modal-header{
+    background-image: url(background/fondoHeadLogIn.jpg);
+    border: 1px solid black;
+    color:white;}   
+  .btn-close{
+    background-image: url(background/close.png);
+  }
+                  
