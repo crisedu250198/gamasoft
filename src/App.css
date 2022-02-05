@@ -387,4 +387,26 @@ a {
   .btn-close{
     background-image: url(background/close.png);
   }
-                  
+  .containerAddCart{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    
+    align-items: center;
+  }
+  .countItems{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+    align-items: center;
+    
+  }
+  .countItems button{
+    width: 2rem;
+  }
+  .countItems p{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }                
