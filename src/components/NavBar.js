@@ -19,7 +19,7 @@ const NavBar = () => {
                         <li className="containerTop__ListNavLeft">
                             <a href="#Nosotros">Nosotros</a>
                         </li>
-                        <li class="containerTop__ListNavLeft">
+                        <li className="containerTop__ListNavLeft">
                             <a href="https://www.google.com/maps" target="_blank">Sucursales</a>
                         </li>
                         <li className="containerTop__ListNavLeft">
@@ -110,16 +110,16 @@ const NavBar = () => {
                                     <br/>
                                     <input type="password" name="pass_login" id="pass_login" placeholder="Ingrese su contraseña"/>
                                 </div>
-                                <div class="modal-body--button">
+                                <div className="modal-body--button">
                                     <input type="button" value="INGRESAR" id="btnAceptar_LogIn" data-bs-dismiss="modal"/> 
                                 </div>
                             </form>
                             
                         </div>
-                        <div class="modal-footer" id="modalFooter">
-                            <input type="button" value="Registrar nueva cuenta" className="backgroundRegistrarse" onClick="crearInterfazRegistro()"/>
-                            <input type="button" value="Continuar con Facebook" className="backgroundFacebook" onClick="location.href='https://www.facebook.com/';" />
-                            <input type="button" value="Continuar con Google +" className="backgroundGoogle" onClick="location.href='https://accounts.google.com/';"/>                
+                        <div className="modal-footer" id="modalFooter">
+                            <input type="button" value="Registrar nueva cuenta" className="backgroundRegistrarse" />
+                            <input type="button" value="Continuar con Facebook" className="backgroundFacebook" />
+                            <input type="button" value="Continuar con Google +" className="backgroundGoogle" />                
                         </div>
                     </div>
                 </div>

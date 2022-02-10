@@ -1,0 +1,261 @@
+{
+    "destacados":[
+        {
+            "id": 123321321,
+            "descripcion": "Fuente Cooler Master Elite V4 500W 80 Plus",
+            "precio":  5899.00,
+            "cantidad": 213,
+            "imagen": "images/coolerMaster.jpg" 
+        },
+        {
+            "id": 123328451,
+            "descripcion": "Teclado Redragon KUMARA K552 RGB Mecánico ",
+            "precio":  5499.00,
+            "cantidad": 213,
+            "imagen": "images/tecladoredragon.jpg"
+        },
+        {
+            "id": 123654321,
+            "descripcion": "  Memoria RAM Hikvision 8GB DDR4 3200Mhz  ",
+            "precio":  5199.00,
+            "cantidad": 213,
+            "imagen": "images/ramhikvision.png"
+        },
+        {
+            "id": 123322321,
+            "descripcion": " Notebook ASUS X509MA Intel N4020 | 4GB | ",
+            "precio":  54999.00,
+            "cantidad": 213,
+            "imagen": "images/notebookasus2.jpg"
+        },
+        {
+            "id": 123342321,
+            "descripcion": " Mother Minería AsRock H110 PRO BTC+ 13x  ",
+            "precio":  59999.00,
+            "cantidad": 213,
+            "imagen": "images/motherboardasrockh110pro.png" 
+        },
+        {
+            "id": 123423321,
+            "descripcion": "  Mother Gigabyte B550M AORUS ELITE AM4   ",
+            "precio":  17999.00,
+            "cantidad": 213,
+            "imagen": "images/motherboardAdrusb560.png" 
+        },
+        {
+            "id": 123536321,
+            "descripcion": " Mouse Corsair Katar Pro Ultraliviano 12400 DPI ",
+            "precio":  2699.00,
+            "cantidad": 213,
+            "imagen": "images/mousecorsair.jpg" 
+        },
+        {
+            "id": 123351621,
+            "descripcion": "  Mouse Logitech G502 KDA Edition Gaming HERO RGB 16000DPI",
+            "precio":  5899.00,
+            "cantidad": 213,
+            "imagen": "images/mouseLogKda.png" 
+        },
+        {
+            "id": 123321641,
+            "descripcion": "Micro Intel Core I5 9400F HexaCore 9va Gen",
+            "precio":  16999.00,
+            "cantidad": 213,
+            "imagen": "images/microi59.jpg" 
+        }
+    ],
+    "novedades": [
+        {
+            "id": 223321321,
+            "descripcion": "Bundle HyperX Streamer Kit (Auriculares Cloud Core + Micrófono Solocast)",
+            "precio":  14999.00,
+            "cantidad": 213,
+            "imagen": "images/Bundle HyperX Streamer Kit.png" 
+        },
+        {
+            "id": 223328451,
+            "descripcion": "Gabinete Aerocool Mirage Vidrio Templado 3x14cm ARGB",
+            "precio":  8499.00,
+            "cantidad": 213,
+            "imagen": "images/Gabinete Aerocool Mirage.png"
+        },
+        {
+            "id": 223654321,
+            "descripcion": "Auriculares Cougar Immersa PRO TI 7.1 RGB PC/PS4/XBOX ONE",
+            "precio":  11999.00,
+            "cantidad": 213,
+            "imagen": "images/Auriculares Cougar Immersa PRO.jpg"
+        },
+        {
+            "id": 223322321,
+            "descripcion": "Micro Intel Core I9 12900K 16 Núcleos / 24 Threads 5.2Ghz (12va Gen) LGA1700 ",
+            "precio": 99999.00,
+            "cantidad": 213,
+            "imagen": "images/Micro Intel Core I9 12900K 16 Núcleos.png"
+        },
+        {
+            "id": 223342321,
+            "descripcion": "Notebook Lenovo S340 AMD Ryzen 3 3200U | 8GB Dual Channel | 256GB NVME",
+            "precio":  83999.00,
+            "cantidad": 213,
+            "imagen": "images/Notebook Lenovo S340 AMD Ryzen 3 3200U.jpg" 
+        },
+        {
+            "id": 223423321,
+            "descripcion": "Micro Intel Core I9 12900KF 16 Núcleos / 24 Threads 5.2Ghz (12va Gen) LGA1700",
+            "precio":  96999.00,
+            "cantidad": 213,
+            "imagen": "images/Micro Intel Core I9 12900KF 16 Núcleos.png" 
+        },
+        {
+            "id": 223536321,
+            "descripcion": "Placa de Video Gigabyte NVIDIA GeForce RTX 3080 TI AORUS MASTER 12Gb GDDR6",
+            "precio":  439999.00,
+            "cantidad": 213,
+            "imagen": "images/Placa de Video Gigabyte NVIDIA GeForce RTX 3080 TI.png" 
+        },
+        {
+            "id": 223351621,
+            "descripcion": "Mother MSI PRO Z690-A DDR4 (12va Gen) LGA1700",
+            "precio":  33999.00,
+            "cantidad": 213,
+            "imagen": "images/Mother MSI PRO Z690-A DDR4 (12va Gen) LGA1700.png" 
+        },
+        {
+            "id": 223321641,
+            "descripcion": "Mother ASUS ROG STRIX Z690-F GAMING WI-FI DDR5 (12va Gen) LGA1700",
+            "precio":  62999.00,
+            "cantidad": 213,
+            "imagen": "images/Mother ASUS ROG STRIX Z690-F GAMING WI-FI DDR5 (12va Gen) LGA1700.png" 
+        }
+    ],
+    "productos":[
+        {
+            "id": 123321321,
+            "descripcion": "Fuente Cooler Master Elite V4 500W 80 Plus",
+            "precio":  5899.00,
+            "cantidad": 213,
+            "imagen": "images/coolerMaster.jpg" 
+        },
+        {
+            "id": 123328451,
+            "descripcion": "Teclado Redragon KUMARA K552 RGB Mecánico ",
+            "precio":  5499.00,
+            "cantidad": 213,
+            "imagen": "images/tecladoredragon.jpg"
+        },
+        {
+            "id": 123654321,
+            "descripcion": "  Memoria RAM Hikvision 8GB DDR4 3200Mhz  ",
+            "precio":  5199.00,
+            "cantidad": 213,
+            "imagen": "images/ramhikvision.png"
+        },
+        {
+            "id": 123322321,
+            "descripcion": " Notebook ASUS X509MA Intel N4020 | 4GB | ",
+            "precio":  54999.00,
+            "cantidad": 213,
+            "imagen": "images/notebookasus2.jpg"
+        },
+        {
+            "id": 123342321,
+            "descripcion": " Mother Minería AsRock H110 PRO BTC+ 13x  ",
+            "precio":  59999.00,
+            "cantidad": 213,
+            "imagen": "images/motherboardasrockh110pro.png" 
+        },
+        {
+            "id": 123423321,
+            "descripcion": "  Mother Gigabyte B550M AORUS ELITE AM4   ",
+            "precio":  17999.00,
+            "cantidad": 213,
+            "imagen": "images/motherboardAdrusb560.png" 
+        },
+        {
+            "id": 123536321,
+            "descripcion": " Mouse Corsair Katar Pro Ultraliviano 12400 DPI ",
+            "precio":  2699.00,
+            "cantidad": 213,
+            "imagen": "images/mousecorsair.jpg" 
+        },
+        {
+            "id": 123351621,
+            "descripcion": "  Mouse Logitech G502 KDA Edition Gaming HERO RGB 16000DPI",
+            "precio":  5899.00,
+            "cantidad": 213,
+            "imagen": "images/mouseLogKda.png" 
+        },
+        {
+            "id": 123321641,
+            "descripcion": "Micro Intel Core I5 9400F HexaCore 9va Gen",
+            "precio":  16999.00,
+            "cantidad": 213,
+            "imagen": "images/microi59.jpg" 
+        },
+        {
+            "id": 223321321,
+            "descripcion": "Bundle HyperX Streamer Kit (Auriculares Cloud Core + Micrófono Solocast)",
+            "precio":  14999.00,
+            "cantidad": 213,
+            "imagen": "images/Bundle HyperX Streamer Kit.png" 
+        },
+        {
+            "id": 223328451,
+            "descripcion": "Gabinete Aerocool Mirage Vidrio Templado 3x14cm ARGB",
+            "precio":  8499.00,
+            "cantidad": 213,
+            "imagen": "images/Gabinete Aerocool Mirage.png"
+        },
+        {
+            "id": 223654321,
+            "descripcion": "Auriculares Cougar Immersa PRO TI 7.1 RGB PC/PS4/XBOX ONE",
+            "precio":  11999.00,
+            "cantidad": 213,
+            "imagen": "images/Auriculares Cougar Immersa PRO.jpg"
+        },
+        {
+            "id": 223322321,
+            "descripcion": "Micro Intel Core I9 12900K 16 Núcleos / 24 Threads 5.2Ghz (12va Gen) LGA1700 ",
+            "precio": 99999.00,
+            "cantidad": 213,
+            "imagen": "images/Micro Intel Core I9 12900K 16 Núcleos.png"
+        },
+        {
+            "id": 223342321,
+            "descripcion": "Notebook Lenovo S340 AMD Ryzen 3 3200U | 8GB Dual Channel | 256GB NVME",
+            "precio":  83999.00,
+            "cantidad": 213,
+            "imagen": "images/Notebook Lenovo S340 AMD Ryzen 3 3200U.jpg" 
+        },
+        {
+            "id": 223423321,
+            "descripcion": "Micro Intel Core I9 12900KF 16 Núcleos / 24 Threads 5.2Ghz (12va Gen) LGA1700",
+            "precio":  96999.00,
+            "cantidad": 213,
+            "imagen": "images/Micro Intel Core I9 12900KF 16 Núcleos.png" 
+        },
+        {
+            "id": 223536321,
+            "descripcion": "Placa de Video Gigabyte NVIDIA GeForce RTX 3080 TI AORUS MASTER 12Gb GDDR6",
+            "precio":  439999.00,
+            "cantidad": 213,
+            "imagen": "images/Placa de Video Gigabyte NVIDIA GeForce RTX 3080 TI.png" 
+        },
+        {
+            "id": 223351621,
+            "descripcion": "Mother MSI PRO Z690-A DDR4 (12va Gen) LGA1700",
+            "precio":  33999.00,
+            "cantidad": 213,
+            "imagen": "images/Mother MSI PRO Z690-A DDR4 (12va Gen) LGA1700.png" 
+        },
+        {
+            "id": 223321641,
+            "descripcion": "Mother ASUS ROG STRIX Z690-F GAMING WI-FI DDR5 (12va Gen) LGA1700",
+            "precio":  62999.00,
+            "cantidad": 213,
+            "imagen": "images/Mother ASUS ROG STRIX Z690-F GAMING WI-FI DDR5 (12va Gen) LGA1700.png" 
+        }
+    ]
+
+}
