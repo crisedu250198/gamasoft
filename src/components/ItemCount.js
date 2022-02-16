@@ -23,7 +23,7 @@ const ItemCount = ()=>{
                 <p>{cantidad}</p>
                 <button onClick={increment}>+</button>
             </div>
-            <button>ADD Cart</button>
+            <button>Comprar</button>
         </div>
         
         </>

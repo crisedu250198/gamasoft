@@ -2,7 +2,7 @@ const Item =(data)=>{
     return(
         <>
         <div key={data.id} className="containerCarruselProd--List_card">
-            <img src={data.imagen} alt="Carrucel de imagenes"/>
+            <img src= {data.imagen} alt="Carrucel de imagenes"/>
             <h4>{data.descripcion}</h4>
             <div className="card__info-button">
                 <div className="card__info">

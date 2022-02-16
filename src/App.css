@@ -446,4 +446,35 @@ a {
     background-color:#05479D;}
   .containerCarruselProd--List_card div button:hover {
     transform: scale(1.1, 1.1);
-    background: #2983BC; }            
+    background: #2983BC; }  
+    .card__info-button{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    } 
+    .card__info{
+      background-color: #05479D;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .containerDetail{
+      margin-top: 8rem;
+      display: grid;
+      grid-template-areas: "img info";
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 20px;
+      grid-template-rows: auto auto; 
+    }
+    .containerDetail_Imagenes{
+      grid-area: img;
+    }
+    .containerDetail_Info{
+      grid-area: info;
+    }           

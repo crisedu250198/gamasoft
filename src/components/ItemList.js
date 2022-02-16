@@ -1,26 +1,17 @@
 import { useEffect, useState} from 'react';
 import Item from './Item';
 import products from './products';
-
+import { customFetch } from "../utility/customFetch";
 const ItemList = () =>{
     const [productsList,setProductsList]= useState([]);
-    function getProducts(products){
-        return new Promise((resolve,reject)=>{
-            if(products.length > 0){
-                resolve(products)
-            }else
-            {
-                reject('No se pudo cargar los productos..');
-            }
-        });
-                              
-    }
     useEffect(()=>{
-        setTimeout(()=>{getProducts(products).then(data => setProductsList(data)).catch(error=>console.log(error))},2000);
+        customFetch(2000, products)
+        .then(result => setProductsList(result))
+        .catch(error => console.log(error))
     },[]);
     return(
         <>
-        <div>
+        <div className='container'>
             {
               productsList.map(item => {
                 return(
