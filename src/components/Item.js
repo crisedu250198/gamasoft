@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Item =(data)=>{
     return(
         <>
@@ -11,8 +13,8 @@ const Item =(data)=>{
                 </div>  
 
                 <div>
+                    <Link to={'/item/'+data.id} ><button>Comprar</button></Link>
                     
-                    <button>Comprar</button>
                 </div>  
             </div>  
         </div>

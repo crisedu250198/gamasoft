@@ -10,7 +10,7 @@ const ItemDetail= (data)=>{
          <div className="containerDetail_Info">
             <h1>{data.descripcion}</h1>
             <h2>Precio: {data.precio}</h2>
-            <ItemCount/>
+            <ItemCount  />
          </div>
      </div>
  );

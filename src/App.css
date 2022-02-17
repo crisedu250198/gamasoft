@@ -477,4 +477,33 @@ a {
     }
     .containerDetail_Info{
       grid-area: info;
-    }           
+    } 
+    .containerBot__ContainerMenu {
+      width: 100%;
+      background-color: #EEEEEE;
+      align-items: center;
+      display: inline-block;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      position: relative; }          
+    .containerBot__ContainerMenu ul {
+      display: flex;
+      margin-bottom: 0;
+      justify-content: space-between;
+       }
+      .containerBot__ContainerMenu ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 10px; }
+        .containerBot__ContainerMenu ul li a {
+          color: #424143;
+          display: block;
+          transition: all 0.4s linear;
+          border-radius: 5px; 
+          text-decoration: none;}
+        .containerBot__ContainerMenu ul li a:hover {
+          background: #a8a8a8; }
+      .containerBot__ContainerMenu ul li:hover .containerSubMenu ul {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1; }
