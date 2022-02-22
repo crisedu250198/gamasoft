@@ -5,7 +5,8 @@ const products =[
         descripcion: 'Fuente Cooler Master Elite V4 500W 80 Plus',
         precio:  5899.00,
         cantidad: 213,
-        imagen: require('../images/coolerMaster.jpg' ) 
+        imagen: require('../images/coolerMaster.jpg' ),
+        stock: 50 
     },
     {
         id: 123328451,
@@ -13,7 +14,8 @@ const products =[
         descripcion: 'Teclado Redragon KUMARA K552 RGB Mecánico ',
         precio:  5499.00,
         cantidad: 213,
-        imagen: require('../images/tecladoredragon.jpg')
+        imagen: require('../images/tecladoredragon.jpg'),
+        stock: 50
     },
     {
         id: 123654321,
@@ -21,7 +23,8 @@ const products =[
         descripcion: '  Memoria RAM Hikvision 8GB DDR4 3200Mhz  ',
         precio:  5199.00,
         cantidad: 213,
-        imagen: require('../images/ramhikvision.png')
+        imagen: require('../images/ramhikvision.png'),
+        stock: 50
     },
     {
         id: 123322321,
@@ -29,7 +32,8 @@ const products =[
         descripcion: ' Notebook ASUS X509MA Intel N4020 | 4GB | ',
         precio:  54999.00,
         cantidad: 213,
-        imagen: require('../images/notebookasus2.jpg')
+        imagen: require('../images/notebookasus2.jpg'),
+        stock: 50
     },
     {
         id: 123342321,
@@ -37,7 +41,8 @@ const products =[
         descripcion: ' Mother Minería AsRock H110 PRO BTC+ 13x  ',
         precio:  59999.00,
         cantidad: 213,
-        imagen: require('../images/motherboardasrockh110pro.png')
+        imagen: require('../images/motherboardasrockh110pro.png'),
+        stock: 50
     },
     {
         id: 123423321,
@@ -45,7 +50,8 @@ const products =[
         descripcion: '  Mother Gigabyte B550M AORUS ELITE AM4   ',
         precio:  17999.00,
         cantidad: 213,
-        imagen: require('../images/motherboardAdrusb560.png')
+        imagen: require('../images/motherboardAdrusb560.png'),
+        stock: 50
     },
     {
         id: 123536321,
@@ -53,7 +59,8 @@ const products =[
         descripcion: ' Mouse Corsair Katar Pro Ultraliviano 12400 DPI ',
         precio:  2699.00,
         cantidad: 213,
-        imagen: require('../images/mousecorsair.jpg')
+        imagen: require('../images/mousecorsair.jpg'),
+        stock: 50
     },
     {
         id: 123351621,
@@ -61,7 +68,8 @@ const products =[
         descripcion: '  Mouse Logitech G502 KDA Edition Gaming HERO RGB 16000DPI',
         precio:  5899.00,
         cantidad: 213,
-        imagen: require('../images/mouseLogKda.png')
+        imagen: require('../images/mouseLogKda.png'),
+        stock: 50
     },
     {
         id: 123321641,
@@ -69,7 +77,8 @@ const products =[
         descripcion: 'Micro Intel Core I5 9400F HexaCore 9va Gen',
         precio:  16999.00,
         cantidad: 213,
-        imagen: require('../images/microi59.jpg')
+        imagen: require('../images/microi59.jpg'),
+        stock: 50
     }
 ];
 export default products;

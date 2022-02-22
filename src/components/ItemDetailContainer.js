@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 const ItemDetailContainer=()=>{
     const [data, setDato] = useState([]);
     const {idProd}= useParams();
-    
     console.log(parseInt(idProd));
     useEffect(() => {
         customFetch(2000, products.find(item => item.id === parseInt(idProd)))
@@ -20,7 +19,8 @@ const ItemDetailContainer=()=>{
             <ItemDetail 
             imagen= {data.imagen}
             descripcion={data.descripcion}
-            precio= {data.precio}/>
+            precio= {data.precio}
+            stock ={data.stock}/>
         </div>
     );
 }
