@@ -20,7 +20,8 @@ const ItemDetailContainer=()=>{
             imagen= {data.imagen}
             descripcion={data.descripcion}
             precio= {data.precio}
-            stock ={data.stock}/>
+            stock ={data.stock}
+            id={data.id} />
         </div>
     );
 }

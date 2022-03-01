@@ -578,3 +578,36 @@ a {
           .cardCarrito__info h6 {
             font-size: 15px;
           }                
+          .presupuesto{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 11.25%;
+            align-items: center;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid #CCC; 
+            margin-bottom: 10px;
+          } 
+          .btnCarrito{
+            display: flex;
+            flex-direction: row;
+          }
+          .btnCarrito button {
+            color: #fff;
+            background: none;
+            border: none;
+            display: block;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+            padding: 20px; }
+          .btnCarrito__contador{
+            background: red;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
