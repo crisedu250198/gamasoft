@@ -77,6 +77,7 @@ const Cart =() =>{
                 <h3>Subtotal: {"$"+data.calcSubtotal()+".00"} </h3>
                 <h3>Envio: $400.00</h3>
                 <h2>Total: {"$"+(data.calcSubtotal()+400)+".00"}</h2>
+                <button onClick={createOrder}>FINALIZAR COMPRA</button>
                 </div>
             }
             
