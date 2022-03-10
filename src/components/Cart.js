@@ -2,6 +2,9 @@ import { CartContext } from "./CartContext";
 import { useContext, useEffect, useState } from "react";
 import { customFetch } from "../utility/customFetch";
 import { Link } from "react-router-dom";
+import { collection, doc, increment, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
+import db from "../utility/firebaseConfig";
+import { async } from "@firebase/util";
 const Cart =() =>{
      const data = useContext(CartContext);
      const [cart,setCart]= useState([]);
@@ -11,6 +14,35 @@ const Cart =() =>{
         .catch(error => console.log(error))
         
     }, [data]);
+    const createOrder = ()=>{
+        let order = {
+            buyer:{
+                email: "cris@gmail.com",
+                name: "christian prudencio",
+                phone: "2131321233"
+            },
+            items: data.cartList.map((item)=>{
+                return {id: item.id, descripcion: item.descripcion, cantidad: item.cantidad, precio: item.precio};
+            }),
+            total: data.calcSubtotal + 400,
+            fecha: serverTimestamp()
+        }
+        const createOrderInFiresore = async () =>{
+            const newOrderRef = doc(collection(db,"orders"));
+            await setDoc(newOrderRef,order);
+            return newOrderRef;
+        }
+        createOrderInFiresore().then(result => {alert('Tu pedido fue creado con exito: '+ result.id);
+                                                data.cartList.map(async (item) => {
+                                                    const itemRef = doc(db,"products",item.id);
+                                                    await updateDoc(itemRef,{
+                                                        stock: increment(-item.cantidad)
+                                                    });
+                                                }); 
+                                                data.removeList();})
+                               .catch(error => console.log(error));
+    }
+    
     return(
         <>
         
