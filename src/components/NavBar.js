@@ -60,7 +60,7 @@ const NavBar = () => {
                             </div>
                             <div className="offcanvas-body">
                                 <div className="containerBot__ContainerIconos">
-                                    <a href="pages/favoritos.html"><img src={imgFav} alt="Favoritos"/>Favoritos</a>
+                                    <Link to='/favorite'><img src={imgFav} alt="Favoritos"/>Favoritos</Link>
                                     <div className="containerBot__ContainerIconos--btn">
                                         <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAccederRes">
                                             <img src={imgUser} alt="Iniciar Sesion/Registrarte"/>
@@ -79,7 +79,7 @@ const NavBar = () => {
                     <div className="menu-no-phone">
 
                         <div className="containerBot__ContainerIconos">
-                            <a href="pages/favoritos.html"><img src={imgFav} alt="Favoritos"/><p>Favoritos</p></a>
+                            <Link to='/favorite'><img src={imgFav} alt="Favoritos"/><p>Favoritos</p></Link>
                             <div className="containerBot__ContainerIconos--btn">
                                 <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAcceder">
                                     <img src={imgUser} alt="Iniciar Sesion/Registrarte"/>
@@ -132,19 +132,19 @@ const NavBar = () => {
                 <nav class="container">
                     <ul class="pad-0">
                         <li>
-                            <Link to='category/0'>Categorias</Link>
+                            <Link to='/category/'>Categorias</Link>
                         </li>
                         <li>
-                            <Link to='category/1'>Arma tu PC </Link>
+                            <Link to='/category/1'>Arma tu PC </Link>
                         </li>
                         <li>
-                            <Link to='category/0'>Encontra tu Equipo</Link>
+                            <Link to='/category/0'>Encontra tu Equipo</Link>
                         </li>
                         <li>
-                            <Link to='category/2'>Notebooks</Link>
+                            <Link to='/category/2'>Notebooks</Link>
                         </li>
                         <li>
-                            <Link to='category/10'>¡Ofertas!</Link>
+                            <Link to='/category/10'>¡Ofertas!</Link>
                         </li>
                     </ul>
                 </nav>     

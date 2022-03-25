@@ -3,6 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
+import CartModal from './CartModal';
 const CartWidget = () =>{
     const data = useContext(CartContext);
     return(
@@ -25,6 +26,7 @@ const CartWidget = () =>{
             </div>
             <div className="offcanvas-body modalCarrito--body" >
                 <div className="modalCarrito--body_Productos" id="carrito">
+                    <CartModal/>
                 </div>
                 <div className="modalCarrito--body_Total" id="Totalcarrito">
                     <h3>TU CARRITO ESTA VACIO...</h3>

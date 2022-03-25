@@ -4,7 +4,6 @@ import { fireStoneFetch ,fireStoneFetchFilter} from "../utility/customFetch";
 const ItemList = (data) =>{
     const [productsList,setProductsList]= useState([]);
     useEffect(()=>{
-
         if( typeof data.idCategory  === typeof undefined){
         
         fireStoneFetch().then(result => setProductsList(result))
@@ -21,7 +20,7 @@ const ItemList = (data) =>{
     },[data]);
     return(
         <>
-        <div className='container'>
+        <section className="containerProdCateg">
             {
               productsList.map(item => {
                 return(
@@ -35,7 +34,7 @@ const ItemList = (data) =>{
             
             }
             
-        </div>
+        </section>
         </>
     );
 }

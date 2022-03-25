@@ -15,7 +15,9 @@ const Cart =() =>{
         
     }, [data]);
     const createOrder = ()=>{
+        let calcTotal = data.calcSubtotal() + 400;
         let order = {
+            
             buyer:{
                 email: "cris@gmail.com",
                 name: "christian prudencio",
@@ -24,7 +26,8 @@ const Cart =() =>{
             items: data.cartList.map((item)=>{
                 return {id: item.id, descripcion: item.descripcion, cantidad: item.cantidad, precio: item.precio};
             }),
-            total: data.calcSubtotal + 400,
+             
+            total: calcTotal,
             fecha: serverTimestamp()
         }
         const createOrderInFiresore = async () =>{
@@ -46,40 +49,44 @@ const Cart =() =>{
     return(
         <>
         
-        <div className="container">
-            <h1>Carrito de compras</h1>
-            {   
-                cart.length > 0 
-                ? cart.map((item) =>(
-                <div class="cardCarrito">
-                    <img src= {item.imagen} alt=""/>
-                    <h3>{item.descripcion}</h3>
-                    <div class="cardCarrito__info">
-                        <h4>Cantidad: {item.cantidad}</h4>
-                        <div class="cardCarrito__info-Precio">
-                            <h5>Precio Web</h5>
-                            <h6>$ {item.precio}.00</h6>
-                        </div>  
+        <div className="container ">
+            <h1 className="containerCart_Titulo">CARRITO DE COMPRAS</h1>
+            <div className="containerCart">
+                <div className="containerCart_carrito col-8">
+                    
+                    {   
+                        cart.length > 0 
+                        ? cart.map((item) =>(
+                        <div class="cardCarritoWindow">
+                            <img src= {item.imagen} alt=""/>
+                            <h3>{item.descripcion}</h3>
+                            <div class="cardCarritoWindow__info">
+                                <h4>Cantidad: {item.cantidad}</h4>
+                                <div class="cardCarritoWindow__info-Precio">
+                                    <h5>Precio Web</h5>
+                                    <h6>$ {item.precio}.00</h6>
+                                </div>  
+                            </div>
+                            <button onClick={() => data.removeItem(item.id)}>Eliminar</button>  
+                        </div> 
+                        )) 
+                        : <><h2>TU CARRITO ESTA VACIO...</h2><><button disabled>Vaciar Carrito</button> <Link to='/'><button>Seguir Comprando</button></Link></></> 
+                    }
+                    
+                </div>
+                
+                {
+                    cart.length > 0 && <div className="container containerCart_presupusto">
+                    <h1>Resumen de Compra:</h1>
+                    <h3>Subtotal: {"$"+data.calcSubtotal()+".00"} </h3>
+                    <h3>Envio: $400.00</h3>
+                    <h2>Total: {"$"+(data.calcSubtotal()+400)+".00"}</h2>
+                    <button onClick={createOrder}>FINALIZAR COMPRA</button>
+                    <button onClick={data.removeList}>Vaciar Carrito</button>
                     </div>
-                    <button onClick={() => data.removeItem(item.id)}>Eliminar</button>  
-                </div>
-                )) 
-                : <h2>Carrito vacio...</h2>
-            }
-            {
-                cart.length > 0 
-                ?<button onClick={data.removeList}>Vaciar Carrito</button>
-                :<><button disabled>Vaciar Carrito</button> <Link to='/'><button>Seguir Comprando</button></Link></>
-            }
-            {
-                cart.length > 0 && <div className="container presupusto">
-                <h1>Resumen de Compra:</h1>
-                <h3>Subtotal: {"$"+data.calcSubtotal()+".00"} </h3>
-                <h3>Envio: $400.00</h3>
-                <h2>Total: {"$"+(data.calcSubtotal()+400)+".00"}</h2>
-                <button onClick={createOrder}>FINALIZAR COMPRA</button>
-                </div>
-            }
+                }
+            </div>
+            
             
         </div>
         </>
