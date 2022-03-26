@@ -63,6 +63,7 @@ const ItemListContainer = (props) =>{
                             <a href="../pages/categorias.html">ADAPTADORES/OTROS</a>
                         </li>
                     </ul>
+                    
                 </div>
                 
                 <div className="containerEncabezado">
