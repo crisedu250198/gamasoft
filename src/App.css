@@ -1145,13 +1145,11 @@ a {
                 display: flex;
                 flex-direction: row;
               }
-              .containerCart_carrito{
-                width: 60%;
-              }
               .cardCarritoWindow{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
+                height: 80%;
                 align-items: center;
                 border-radius: 5px;
                 background-color: white;
@@ -1217,3 +1215,86 @@ a {
                 .cardCarritoWindow__info h6 {
                   font-size: 15px;
                 }
+                .info_Envio{
+                  display: flex;
+                  flex-direction: column;
+                }
+/* --------------------------------------ESTILOS FOOTER-----------------------------------------------*/
+.containerBackground{
+  width: 100%;
+  background:#05479D;
+}
+.containerFormSuscripcion {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .containerFormSuscripcion label {
+    color: white;
+    font-size: 20px;
+    padding-right: 1rem; }
+  .containerFormSuscripcion input {
+    height: 35px;
+    width: 20rem;}  
+  .containerFormSuscripcion button{
+    height: 40px;
+    width: 5.5rem;
+    background:#010449;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer; }
+  .containerFormSuscripcion button:hover{
+    background:#2983BC;
+    transform: scale(1.1, 1.1);}   
+
+    .footer__containerAyuda--Fondo{
+      width: 100%;
+      margin-left: 0;
+      background-image: url(./images/fondoFooter.jpg);
+      
+    }
+.footer__containerAyuda {
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  justify-content: space-around; }
+  .footer__containerAyuda h3 {
+    height: 30px;
+    background:#05479D;
+    color: white;
+    margin-top: 2rem; }
+  .footer__containerAyuda p {
+    margin-top: 1rem;
+    color: white;
+    text-align: left;
+    font-size: 15px; }
+
+.footer__containerAyuda--Menu {
+  margin-top: 5px; }
+  .footer__containerAyuda--Menu h4{
+    color: white;
+    text-decoration: underline;
+  }
+  .footer__containerAyuda--Menu li {
+    margin-left: -1.6rem; }
+    .footer__containerAyuda--Menu li a{
+      color: white; }
+.footer__Redes {
+  margin-top: -1rem; }
+  .footer__Redes ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -1.5rem; }
+    .footer__Redes ul li {
+      display: block; }
+      .footer__Redes ul li img {
+        height: 23px;
+        width: 23px;
+        margin-right: 1rem; }

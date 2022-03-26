@@ -2,9 +2,6 @@ import { CartContext } from "./CartContext";
 import { useContext, useEffect, useState } from "react";
 import { customFetch } from "../utility/customFetch";
 import { Link } from "react-router-dom";
-import { collection, doc, increment, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
-import db from "../utility/firebaseConfig";
-import { async } from "@firebase/util";
 const Cart =() =>{
      const data = useContext(CartContext);
      const [cart,setCart]= useState([]);
@@ -14,44 +11,14 @@ const Cart =() =>{
         .catch(error => console.log(error))
         
     }, [data]);
-    const createOrder = ()=>{
-        let calcTotal = data.calcSubtotal() + 400;
-        let order = {
-            
-            buyer:{
-                email: "cris@gmail.com",
-                name: "christian prudencio",
-                phone: "2131321233"
-            },
-            items: data.cartList.map((item)=>{
-                return {id: item.id, descripcion: item.descripcion, cantidad: item.cantidad, precio: item.precio};
-            }),
-             
-            total: calcTotal,
-            fecha: serverTimestamp()
-        }
-        const createOrderInFiresore = async () =>{
-            const newOrderRef = doc(collection(db,"orders"));
-            await setDoc(newOrderRef,order);
-            return newOrderRef;
-        }
-        createOrderInFiresore().then(result => {alert('Tu pedido fue creado con exito: '+ result.id);
-                                                data.cartList.map(async (item) => {
-                                                    const itemRef = doc(db,"products",item.id);
-                                                    await updateDoc(itemRef,{
-                                                        stock: increment(-item.cantidad)
-                                                    });
-                                                }); 
-                                                data.removeList();})
-                               .catch(error => console.log(error));
-    }
+    
     
     return(
         <>
         
         <div className="container ">
             <h1 className="containerCart_Titulo">CARRITO DE COMPRAS</h1>
-            <div className="containerCart">
+            <div className=" container containerCart">
                 <div className="containerCart_carrito col-8">
                     
                     {   
@@ -76,12 +43,12 @@ const Cart =() =>{
                 </div>
                 
                 {
-                    cart.length > 0 && <div className="container containerCart_presupusto">
-                    <h1>Resumen de Compra:</h1>
-                    <h3>Subtotal: {"$"+data.calcSubtotal()+".00"} </h3>
-                    <h3>Envio: $400.00</h3>
-                    <h2>Total: {"$"+(data.calcSubtotal()+400)+".00"}</h2>
-                    <button onClick={createOrder}>FINALIZAR COMPRA</button>
+                    cart.length > 0 && <div className="container containerCart_presupusto col-5">
+                    <h1>RESUMEN DE COMPRA:</h1>
+                    <h3>SUBTOTAL: {"$"+data.calcSubtotal()+".00"} </h3>
+                    <h3>ENVIO: $400.00</h3>
+                    <h2>TOTAL: {"$"+(data.calcSubtotal()+400)+".00"}</h2>
+                    <Link to="/finishCart"><button>FINALIZAR COMPRA</button></Link>
                     <button onClick={data.removeList}>Vaciar Carrito</button>
                     </div>
                 }

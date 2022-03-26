@@ -8,6 +8,8 @@ import Cart from './components/Cart';
 import CartContextProvider from './components/CartContext';
 import Home from './components/Home';
 import ItemListFavContainer from './components/ItemListFavContainer';
+import FinishCartContainer from './components/FinishCartContainer';
+import FooterContainer from './components/FooterContainer';
 function App() {
   return (
     <CartContextProvider>
@@ -19,8 +21,10 @@ function App() {
         <Route path='/category' element={<ItemListContainer/>}/>
         <Route path='/category/:idCategory' element={<ItemListContainer/>}/>
         <Route path='/cart' element={<Cart/>}/>
-        <Route path='/favorite' element={<ItemListFavContainer/>}  />
+        <Route path='/favorite' element={<ItemListFavContainer/>}/>
+        <Route path='/finishCart' element={<FinishCartContainer/>}/>
       </Routes>
+      <FooterContainer/>
     </BrowserRouter>
     </CartContextProvider>
     
