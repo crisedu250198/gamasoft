@@ -12,22 +12,22 @@ const Home = ()=>{
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src= {require('../images/Banner2.jpg')}  className="d-block w-100" alt="Banner"/>
+                <img src= "https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/Banner2.jpg?alt=media&token=45e47b73-bfad-4d2f-b698-adb9871815b6"  className="d-block w-100" alt="Banner"/>
               </div>
               <div className="carousel-item">
-                <img src={require('../images/Banner3.png')}  className="d-block w-100" alt="Banner2"/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/Banner3.png?alt=media&token=f3c8f98c-fff6-4d86-ac84-be5211a810d7"  className="d-block w-100" alt="Banner2"/>
               </div>
               <div className="carousel-item">
-                <img src={require('../images/Banner4.jpg')} className="d-block w-100" alt="Banner3"/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/Banner4.jpg?alt=media&token=4ac5b7d4-5458-4e3e-a2d7-db4c2506ff0c" className="d-block w-100" alt="Banner3"/>
               </div>
               <div className="carousel-item">
-                <img src={require('../images/Banner5.jpg')} className="d-block w-100" alt="Banner3"/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/Banner5.jpg?alt=media&token=37378453-d817-4430-9750-97111c3824bd" className="d-block w-100" alt="Banner3"/>
               </div>
               <div className="carousel-item">
-                <img src={require('../images/Banner6.jpg')} className="d-block w-100" alt="Banner3"/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/Banner6.jpg?alt=media&token=67eec657-62c4-4bb3-adc8-397c5b3c33f8" className="d-block w-100" alt="Banner3"/>
               </div>
               <div className="carousel-item">
-                <img src={require('../images/Banner7.jpg')} className="d-block w-100" alt="Banner3"/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/Banner7.jpg?alt=media&token=4a31dd12-98f7-43a0-bb5d-7488d72f7402" className="d-block w-100" alt="Banner3"/>
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -43,25 +43,25 @@ const Home = ()=>{
         <section className="containerBanners container">
             <article className="">
                 <div>
-                    <a href="pages/armar-pc.html"><img src={require('../images/armapc.jpg')} alt="Armar tu PC"/></a>
+                    <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/armapc.jpg?alt=media&token=e1d3fa37-0c0c-418a-b4e7-3d627af9020a" alt="Armar tu PC"/></a>
                 </div>
                 <h3>ARMA TU PC</h3>
             </article>
             <article className="">
                 <div>
-                    <a href="pages/encontra-Equipo.html"><img src={require('../images/basic.jpg')} alt="PC Basic Gamer"/></a> 
+                    <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/basic.jpg?alt=media&token=d6d90474-4022-453a-8111-b8d3c45b59e6" alt="PC Basic Gamer"/></a> 
                 </div>
                 <h3>PC BASIC GAMER</h3>
             </article>
             <article className="">
                 <div>
-                    <a href="pages/encontra-Equipo.html"><img src={require('../images/elite.jpg')} alt="PC Elite Gamer"/></a>   
+                    <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elite.jpg?alt=media&token=16bdfffc-9ad4-4ca5-b184-ee0ebe0742d6" alt="PC Elite Gamer"/></a>   
                 </div>
                 <h3>PC ELITE GAMER</h3>
             </article>
             <article className="">
                 <div>
-                    <a href="pages/encontra-Equipo.html"><img src={require('../images/xtreme.jpg')} alt="PC Xtreme Gamer"/></a>
+                    <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/xtreme.jpg?alt=media&token=7bf6bf29-7f15-4d28-818a-e02c593e0eca" alt="PC Xtreme Gamer"/></a>
                 </div>
                 <h3>PC XTREME GAMER</h3>
             </article>
@@ -71,7 +71,7 @@ const Home = ()=>{
             <h2>PRODUCTOS DESTACADOS</h2>
             <div className="containerSecciones__content">
                 <div className="btnCarrusel destacados">
-                    <button alt="Anterior" id="btn-left-destacados" className="destacados"><img src={require('../images/flechaAnterior.png')} alt="Anterior" id="imgAnterior" /></button>
+                    <button alt="Anterior" id="btn-left-destacados" className="destacados"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/flechaAnterior.png?alt=media&token=8873f3d7-fb72-4079-8487-02f75ed89b30" alt="Anterior" id="imgAnterior" /></button>
                 </div>
                 <div className="containerCarruselProd">
                     <div className="containerCarruselProd--List contenedorDestacados">
@@ -84,7 +84,7 @@ const Home = ()=>{
                     </div>
                 </div>
                 <div className="btnCarrusel destacados">
-                <button alt="Siguiente" id="btn-right-destacados" className="destacados"><img src={require('../images/flechaSiguiente.png')} alt="Siguiente" /></button>
+                <button alt="Siguiente" id="btn-right-destacados" className="destacados"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/flechaSiguiente.png?alt=media&token=d7803194-0b06-4b61-aa2a-0224884e535c" alt="Siguiente" /></button>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@ const Home = ()=>{
             <h2>NOVEDADES</h2>
             <div className="containerSecciones__content">
                 <div className="btnCarrusel novedades">
-                    <button alt="Anterior" id="btn-left-novedades" className="novedades"><img src={require('../images/flechaAnterior.png')} alt="Anterior"  /></button>
+                    <button alt="Anterior" id="btn-left-novedades" className="novedades"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/flechaAnterior.png?alt=media&token=8873f3d7-fb72-4079-8487-02f75ed89b30" alt="Anterior"  /></button>
                 </div>
                 <div className="containerCarruselProd">
                     <div className="containerCarruselProd--List contenedorNovedades">
@@ -105,7 +105,7 @@ const Home = ()=>{
                     </div>
                 </div>
                 <div className="btnCarrusel novedades">
-                    <button alt="Siguiente" id="btn-right-novedades" className="novedades"><img src={require('../images/flechaSiguiente.png')} alt="Siguiente" /></button>
+                    <button alt="Siguiente" id="btn-right-novedades" className="novedades"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/flechaSiguiente.png?alt=media&token=d7803194-0b06-4b61-aa2a-0224884e535c" alt="Siguiente" /></button>
                     </div>
             </div>
         </div>

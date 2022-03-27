@@ -1,12 +1,3 @@
-import imgFace from '../images/facebook.png';
-import imgInsta from '../images/instagram.png';
-import imgWsp from '../images/whatsapp.png';
-import logo from '../images/LogoBlanco.png';
-import imgLupa from '../images/lupa.png';
-import imghamb from '../images/hambur.svg';
-import imgUser from '../images/usuario.png';
-import imgCarrito from '../images/carrito.png';
-import imgFav from '../images/corazon.png';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './CartWidget';
@@ -29,13 +20,13 @@ const NavBar = () => {
                                 <a href="https://web.whatsapp.com/" target="_blank">Centro de Ayuda</a>
                             </li>
                             <li className="containerTop__ListNavLeft">
-                                <a href="https://www.facebook.com/" target="_blank"><img src={imgFace} alt="Icono de Facebook"/></a>
+                                <a href="https://www.facebook.com/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/facebook.png?alt=media&token=5f615edb-7369-45e9-8089-7a2b488f926d" alt="Icono de Facebook"/></a>
                             </li>
                             <li className="containerTop__ListNavLeft">
-                                <a href="https://www.instagram.com/" target="_blank"><img src={imgInsta} alt="Icono de instagram"/></a>
+                                <a href="https://www.instagram.com/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/instagram.png?alt=media&token=91c0550e-86c7-4a34-bea3-58d622242c71" alt="Icono de instagram"/></a>
                             </li>
                             <li className="containerTop__ListNavLeft">
-                                <a href="https://web.whatsapp.com/" target="_blank"><img src={imgWsp} alt="Icono de Whatsapp"/></a>
+                                <a href="https://web.whatsapp.com/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/whatsapp.png?alt=media&token=30c46af7-e368-4a5b-826d-3b3b0641e452" alt="Icono de Whatsapp"/></a>
                             </li>
                         </ul>
                     </nav>   
@@ -43,16 +34,16 @@ const NavBar = () => {
             
                 <div className="containerBot container">
                     
-                    <Link to='/'><img src={logo} alt="Logo" className="containerBot__Logo"/></Link> 
+                    <Link to='/'><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/LogoBlanco.png?alt=media&token=45fb7954-f878-4c66-aaf7-36edf70bf89a" alt="Logo" className="containerBot__Logo"/></Link> 
                     
                     <div className="containerBot__Search">
                         <input type="search" name="entrada de texto" id="entrada_de_texto" placeholder="    Eso que querés... Buscalo acá" className="search__Input"/>
-                        <button className="search__InputBtn"><img src={imgLupa} alt="Lupa"/></button>
+                        <button className="search__InputBtn"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/lupa.png?alt=media&token=a341afea-8f13-4e9b-a593-c9ed14165c8e" alt="Lupa"/></button>
                     </div>
 
 
                     <div className="menuResponsive">
-                        <button className="btn btn-primary btn-primary--cfg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src={imghamb} className="btn-menu--size"/></button>
+                        <button className="btn btn-primary btn-primary--cfg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/hambur.svg?alt=media&token=b02c03f2-df04-41b3-96bc-b7c2bd1ff634" className="btn-menu--size"/></button>
                         <div className="offcanvas offcanvas-end offcanvas--back" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div className="offcanvas-header">
                                 <h5 id="offcanvasRightLabel">Menú</h5>
@@ -60,15 +51,15 @@ const NavBar = () => {
                             </div>
                             <div className="offcanvas-body">
                                 <div className="containerBot__ContainerIconos">
-                                    <Link to='/favorite'><img src={imgFav} alt="Favoritos"/>Favoritos</Link>
+                                    <Link to='/favorite'><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/corazon.png?alt=media&token=c6611f55-9d80-4ffc-ba50-117af083b58c" alt="Favoritos"/>Favoritos</Link>
                                     <div className="containerBot__ContainerIconos--btn">
                                         <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAccederRes">
-                                            <img src={imgUser} alt="Iniciar Sesion/Registrarte"/>
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/usuario.png?alt=media&token=35bd2cb6-849e-483b-8a10-283265d81e5b" alt="Iniciar Sesion/Registrarte"/>
                                             <p>Acceder</p> 
                                         </button>
                                     </div>
                                     <div className="containerBot__ContainerIconos--btn">
-                                        <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"><img src={imgCarrito} alt="Carrito"/> <p>Carrito</p> </button>
+                                        <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/carrito.png?alt=media&token=c1e626c5-311e-4847-9a7c-4c52a8cde870" alt="Carrito"/> <p>Carrito</p> </button>
                                     </div>
                                 </div>
                             </div>
@@ -79,10 +70,10 @@ const NavBar = () => {
                     <div className="menu-no-phone">
 
                         <div className="containerBot__ContainerIconos">
-                            <Link to='/favorite'><img src={imgFav} alt="Favoritos"/><p>Favoritos</p></Link>
+                            <Link to='/favorite'><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/corazon.png?alt=media&token=c6611f55-9d80-4ffc-ba50-117af083b58c" alt="Favoritos"/><p>Favoritos</p></Link>
                             <div className="containerBot__ContainerIconos--btn">
                                 <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAcceder">
-                                    <img src={imgUser} alt="Iniciar Sesion/Registrarte"/>
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/usuario.png?alt=media&token=35bd2cb6-849e-483b-8a10-283265d81e5b" alt="Iniciar Sesion/Registrarte"/>
                                     <p>Acceder</p> 
                                 </button>
                             </div>
@@ -138,13 +129,13 @@ const NavBar = () => {
                             <Link to='/category/1'>Arma tu PC </Link>
                         </li>
                         <li>
-                            <Link to='/category/0'>Encontra tu Equipo</Link>
+                            <Link to='/category/2'>Encontra tu Equipo</Link>
                         </li>
                         <li>
-                            <Link to='/category/2'>Notebooks</Link>
+                            <Link to='/category/3'>Notebooks</Link>
                         </li>
                         <li>
-                            <Link to='/category/10'>¡Ofertas!</Link>
+                            <Link to='/category/4'>¡Ofertas!</Link>
                         </li>
                     </ul>
                 </nav>     

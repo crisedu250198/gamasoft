@@ -2,11 +2,13 @@ import { CartContext } from "./CartContext";
 import { useContext,useState } from "react";
 import { collection, doc, increment, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 import db from "../utility/firebaseConfig";
+import { Link } from "react-router-dom";
 const FinishCartContainer =()=>{
     const data = useContext(CartContext);
     const [informacion,setInformacion] = useState({
         nombre:'',
         apellido:'',
+        email:'',
         direccion:'',
         departamento:'',
         codigoPostal:'',
@@ -50,26 +52,43 @@ const FinishCartContainer =()=>{
     
     return(
         <>
-        <div className="container">
-            <h1>INFORMACIÓN DE CONTACTO</h1>
-            <input type="email" name="_replyto" id="email_contacto" placeholder="Ingrese su correo electrónico"/>
-            <h1>DIRECCIÓN DE ENVÍO</h1>
-            <div className="info_Envio">
-                <input type="text" id="Nombre" placeholder="Nombre" name="nombre" onChange={handleInputChange} />
-                <input type="text" id="Apellido" placeholder="Apellido" name="apellido" onChange={handleInputChange}/>
-                <input type="text" id="Direccion" placeholder="Dirección" name="direccion" onChange={handleInputChange}/>
-                <input type="text" id="Departamento" placeholder="Departamento" name="departamento" onChange={handleInputChange}/>
-                <input type="text" id="CodigoPostal" placeholder="Código Postal" name="codigoPostal" onChange={handleInputChange}/>
-                <input type="text" id="Ciudad" placeholder="Ciudad" name="ciudad" onChange={handleInputChange}/>
-                <input type="text" id="Provincia" placeholder="Provincia" name="provincia" onChange={handleInputChange}/>
-                <input type="text" id="Telefono" placeholder="Teléfono" name="telefono" onChange={handleInputChange}/>
-                <button onClick={createOrder}>FINALIZAR COMPRA</button>
+            <div className="container">
+                <h1 className="info_Titulo">DIRECCIÓN DE ENVÍO</h1>
+                <div className="info_Envio ">
+                    <div className="info_Envio--Input">
+                    <label>Nombre:</label> <input type="text" id="Nombre" placeholder="Ingrese su Nombre" name="nombre" onChange={handleInputChange} />                
+                    </div>
+                    <div  className="info_Envio--Input">
+                    <label>Apellido:</label><input type="text" id="Apellido" placeholder="Ingrese su Apellido" name="apellido" onChange={handleInputChange}/>                    
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>Email:</label> <input type="email" id="email_contacto" placeholder="Ingrese su correo electrónico" name="email" onChange={handleInputChange}/>                    
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>DIRECCIÓN:</label><input type="text" id="Direccion" placeholder="Ingrese su Dirección" name="direccion" onChange={handleInputChange}/>
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>Departamento:</label><input type="text" id="Departamento" placeholder="Ingrese su Departamento" name="departamento" onChange={handleInputChange}/>                       
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>Codigo Postal</label><input type="text" id="CodigoPostal" placeholder="Ingrese su Codigo Postal" name="codigoPostal" onChange={handleInputChange}/>                    
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>Ciudad:</label> <input type="text" id="Ciudad" placeholder="Ingrese su Ciudad" name="ciudad" onChange={handleInputChange}/>                    
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>Provincia:</label><input type="text" id="Provincia" placeholder="Ingrese su Provincia" name="provincia" onChange={handleInputChange}/>                    
+                    </div>
+                    <div className="info_Envio--Input">
+                    <label>Teléfono:</label><input type="text" id="Telefono" placeholder="Ingrese su Teléfono" name="telefono" onChange={handleInputChange}/>                     
+                    </div>
+                    <div className="info_Envio--botones" >
+                        <Link to="/"><button id="info_Envio--botonFinalizarCompra" onClick={createOrder}>FINALIZAR COMPRA</button></Link>
+                        <Link to="/Cart"><button id="info_Envio--botonCancelar">CANCELAR</button></Link> 
+                    </div>
+                </div>
+                
             </div>
-        </div>
-        
-        
-        
-
         </>
     );
 }

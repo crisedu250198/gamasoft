@@ -223,26 +223,59 @@ a {
     background: red;
     border-radius: 5px;
   }
+  .emptyCart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .emptyCart img{
+    width: 100%;
+  }
+  .emptyCart h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .emptyCart button{
+    width: 90%;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color:#05479D;
+    padding: 10px 10px 10px 10px;
+  }
+  .emptyCart button:hover{
+    
+  transform: scale(1.1, 1.1);
+  background: greenyellow;
+  }
+
   .modalCarrito--body_Total{
     width: 100%;
-    height: 100%;
+    height: 95%;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     border-radius: 5px;
     background-color: white;
     border:  3px solid black ;
+    justify-content: center;
+    gap: 0.5rem;
   }
+  
   .modalCarrito--body_Total h3{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: black;
   }
   .modalCarrito--body_Total button{
-    width: auto;
-    height: auto;
-    font-size: 18px;
+    width: 8.5rem;
+    height: 3rem;
+    font-size: 16px;
     color: white;
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
@@ -312,35 +345,75 @@ a {
       border-radius: 5px;
       color: #fff; }
   .modal-header{
-    background-image: url(background/fondoHeadLogIn.jpg);
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/fondoHeadLogIn.jpg?alt=media&token=046d1887-f62d-48d9-ade3-1d69d774291d");
     border: 1px solid black;
     color:white;}   
   .btn-close{
-    background-image: url(background/close.png);
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/close.png?alt=media&token=6ca06e6a-0c47-466f-8b8d-20c4c541369f");
   }
   .containerAddCart{
     display: flex;
     flex-direction: row;
     margin-left: 1rem;
-    
     align-items: center;
+    width: 100%;
   }
   .countItems{
     display: flex;
     flex-direction: row;
-    margin-right: 1rem;
+    margin-right: 2rem;
     align-items: center;
-    
   }
   .countItems button{
-    width: 2rem;
+    width: 3rem;
+    height: 2.5rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color:#05479D;
+  }
+  .countItems button:hover{
+    transform: scale(1.1, 1.1);
+    background: #2983BC;
+  }
+  #countTexto{
+    margin-top: 0.5rem;
   }
   .countItems p{
     font-size: 1.5rem;
-    margin-top: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-  }    
+  }
+  
+  .containerAddCart--button{
+    font-size: 1.5rem;
+    padding: 0.1rem 5rem 0.1rem 5rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color:#05479D;
+  }
+  .containerAddCart--buttonDisabled{
+    font-size: 1.5rem;
+    padding: 0.1rem 5rem 0.1rem 5rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color:#CCC;
+  }
+  .containerAddCart--button:hover{
+    transform: scale(1.1, 1.1);
+    background: #2983BC;
+  }
   .containerCarruselProd--List_card {
     height: 351px;
     width: 338px;
@@ -408,7 +481,28 @@ a {
     }
     .containerDetail_Info{
       grid-area: info;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .containerDetail_Info--Precio{
+          background-color:  #2983BC;
+          border-color: #2983BC;
+          border-radius: 5px;
+          width: 37%;
     } 
+    .containerDetail_Info h3{
+      color: #5cb85c;
+    }
+    .containerDetail_Info img{
+      width: 250px;
+      height: 40px;
+    }
+    .containerDetail_Info--Precio h2{
+      padding: 10px;
+      color: white;
+      justify-content: center;
+    }
     .containerBot__ContainerMenu {
       width: 100%;
       background-color: #EEEEEE;
@@ -541,6 +635,8 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: -2rem;
+            margin-top: 0.5rem;
           }
           .containerCuerpoCateg{
             display: flex;
@@ -600,7 +696,7 @@ a {
           .containerProdCateg {
             grid-area: prod;
             display: grid;
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(6, 1fr);
             grid-template-columns: repeat(3, 1fr);
             align-items: center;
             justify-items: center;
@@ -1144,12 +1240,16 @@ a {
               .containerCart{
                 display: flex;
                 flex-direction: row;
+
+              }
+              .containerCart_carrito{
+                min-height: 540px;
               }
               .cardCarritoWindow{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                height: 80%;
+                height: 170px;
                 align-items: center;
                 border-radius: 5px;
                 background-color: white;
@@ -1215,10 +1315,64 @@ a {
                 .cardCarritoWindow__info h6 {
                   font-size: 15px;
                 }
+                .info_Titulo{
+                  margin-top: 2rem;
+                  margin-bottom: 2rem;
+                  
+                }
                 .info_Envio{
                   display: flex;
                   flex-direction: column;
+                  width: 100%;
+                  gap: 2rem;
                 }
+                .info_Envio--Input{
+                  width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-left: 5rem;
+                }
+                .info_Envio--Input input{
+                  width: 50%;
+                }
+                .info_Envio--Input label{
+                  width: 10%;
+                  
+                }
+                .info_Envio--botones{
+                  display: flex;
+                  flex-direction: row;
+                  width: 70%;
+                  align-items: center;
+                  margin-left: 7rem;
+                }
+                .info_Envio--botones button{
+                   justify-content: center; 
+                   width: 50%;
+                   height: 2.5rem;
+                   cursor: pointer;
+                  border: none;
+                  outline: none;
+                  background-color: #2983BC;
+                  border-color: #2983BC;
+                  color: #fff;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; }
+                
+              #info_Envio--botonCancelar:hover {
+                transform: scale(1.1, 1.1);
+                background: #db4a39; }
+                #info_Envio--botonFinalizarCompra:hover {
+                  transform: scale(1.1, 1.1);
+                  background: greenyellow; } 
+
+              .info_Envio--botones a{
+                  justify-content: center; 
+                   width: 100%;
+                }
+
+                
 /* --------------------------------------ESTILOS FOOTER-----------------------------------------------*/
 .containerBackground{
   width: 100%;
@@ -1257,7 +1411,7 @@ a {
     .footer__containerAyuda--Fondo{
       width: 100%;
       margin-left: 0;
-      background-image: url(./images/fondoFooter.jpg);
+      background-image: url("https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/fondoFooter.jpg?alt=media&token=cb122d03-09e4-4ffe-ba77-2cb4c13a3f9e");
       
     }
 .footer__containerAyuda {

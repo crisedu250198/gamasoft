@@ -20,7 +20,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/motherboardasrockh110pro.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -30,7 +30,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
                         
             </article>
@@ -40,7 +40,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/mousecorsair.jpg" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -50,7 +50,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
                         
             </article>
@@ -60,7 +60,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/mousepulsefire.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -70,7 +70,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
             <article class="row">
@@ -79,7 +79,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/tecladoredragon.jpg" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -89,7 +89,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
             <article class="row">
@@ -98,7 +98,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/ramhikvision.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -108,7 +108,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
             <article class="row">
@@ -117,7 +117,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/motherboardAdrusb560.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -127,7 +127,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
             <article class="row">
@@ -136,7 +136,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/gpu3080ventus.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -146,7 +146,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
             <article class="row">
@@ -155,7 +155,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/gpu3080paut.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -165,7 +165,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
                     
             </article>
@@ -175,7 +175,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/gpu1660palit.png" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Nombre del producto</h4>
@@ -185,7 +185,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center">
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
             <article class="row">
@@ -194,7 +194,7 @@ const ItemListFavContainer = ()=>{
                             <input type="checkbox" name="check_fav" id="containerFav--check"/>
                         </div>
                         <div>
-                            <img src="../images/coolerMaster.jpg" alt="imagen del producto"/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/coolerMaster.jpg?alt=media&token=3abbe6b6-a427-431b-ba53-305660355712" alt="imagen del producto"/>
                         </div>
                         <div>
                             <h4>Fuente Cooler Master Elite V4 500W 80 Plus</h4>
@@ -204,7 +204,7 @@ const ItemListFavContainer = ()=>{
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 block--center ">  
                         <input type="button" value="Agregar Carrito" class="first-button"/>
                         <input type="button" value="Ver Articulo"/>
-                        <button><img src="../images/elipsis.png" alt="Elipsis"/></button>
+                        <button><img src="https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/elipsis.png?alt=media&token=ea198484-bc4a-4caa-8960-5754f18afa1e" alt="Elipsis"/></button>
                     </div>
             </article>
         </section>

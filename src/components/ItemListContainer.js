@@ -9,58 +9,58 @@ const ItemListContainer = (props) =>{
                 <div className="containerListCateg">
                     <ul>
                         <li>
-                            <Link to='/category/10'>¡OFERTAS!</Link>
+                            <Link to='/category/4'>¡OFERTAS!</Link>
                         </li>
                         <li>
-                            <a href="../pages/encontra-Equipo.html">EQUIPOS ARMADOS</a>
+                            <Link to='/category/2'>EQUIPOS ARMADOS</Link>
                         </li>
                         <li>
-                            <a href="../pages/notebooks.html">NOTEBOOKS Y ACCESORIOS</a>
+                            <Link to='/category/3'>NOTEBOOKS Y ACCESORIOS</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">COMBOS ACTUALIZACIÓN</a>
+                            <Link to='/category/5'>COMBOS ACTUALIZACIÓN</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">MICROPROCESADORES</a>
+                            <Link to='/category/6'>MICROPROCESADORES</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">MOTHERBOARDS</a>
+                            <Link to='/category/7'>MOTHERBOARDS</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">MEMORIAS RAM</a>
+                            <Link to='/category/8'>MEMORIAS RAM</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">PLACAS DE VIDEO</a>
+                            <Link to='/category/9'>PLACAS DE VIDEO</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">MONITORES Y PROYECTORES</a>
+                            <Link to='/category/10'>MONITORES Y PROYECTORES</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">GABINETES Y FUENTES</a>
+                            <Link to='/category/11'>GABINETES Y FUENTES</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">PERISFERICOS</a>
+                            <Link to='/category/12'>PERISFERICOS</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">ALMACENAMIENTO</a>
+                            <Link to='/category/13'>ALMACENAMIENTO</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">SILLAS</a>
+                            <Link to='/category/14'>SILLAS</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">REFRIGERACIÓN</a>
+                            <Link to='/category/15'>REFRIGERACIÓN</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">REDES</a>
+                            <Link to='/category/16'>REDES</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">TABLETAS DIGITALIZADORAS</a>
+                            <Link to='/category/17'>DIGITALIZADORAS</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">CARTUCHOS</a>
+                            <Link to='/category/18'>CARTUCHOS</Link>
                         </li>
                         <li>
-                            <a href="../pages/categorias.html">ADAPTADORES/OTROS</a>
+                            <Link to='/category/19'>ADAPTADORES/OTROS</Link>
                         </li>
                     </ul>
                     

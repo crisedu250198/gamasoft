@@ -23,15 +23,15 @@ const ItemCount = ({stock=0,initial=1,onAdd})=>{
         <>
         <div className="containerAddCart">
             <div className="countItems">
-                <button onClick={reduce}>-</button>
-                <p>{cantidad}</p>
-                <button onClick={increment}>+</button>
+                <button onClick={reduce}><p>-</p></button>
+                <p id="countTexto">{cantidad}</p>
+                <button onClick={increment}><p>+</p></button>
             </div>
             {
                 stock && cantidad
 
-                ? <button className="quantityAdd-button" onClick={() => onAdd(cantidad)}>Agregar</button> 
-                : <button disabled>Agregar</button>
+                ? <button className="containerAddCart--button" onClick={() => onAdd(cantidad)}>AGREGAR</button> 
+                : <button className="containerAddCart--buttonDisabled" disabled>AGREGAR</button>
             }
         </div>
         

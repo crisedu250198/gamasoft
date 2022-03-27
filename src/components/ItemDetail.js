@@ -18,13 +18,18 @@ const ItemDetail = (data)=>{
 
          <div className="containerDetail_Info">
             <h1>{data.descripcion}</h1>
-            <h2>Precio: {data.precio}</h2> 
-         </div>
-         { 
+            <div className="containerDetail_Info--Precio">
+            <h2 >Precio: ${data.precio}</h2> 
+            </div>
+            <h3>¡Hasta 12 CUOTAS SIN INTERÉS!</h3>
+            <img src= "https://firebasestorage.googleapis.com/v0/b/gamasoft-5d549.appspot.com/o/tarjeas_sin.jpg?alt=media&token=cac04329-3222-4cf3-81a7-e4bd0c56addf"/>
+            { 
             itemCount === 0
             ? <ItemCount stock={data.stock} initial={itemCount} onAdd={onAdd}  />
-            : <Link to='/cart' style={{textDecoration: "none"}}><button className="quantityAdd-button">checkout</button></Link>
+            : <Link to='/cart' style={{textDecoration: "none"}}><button className="containerAddCart--button">CHECKOUT</button></Link>
          }
+         </div>
+         
      </div>
  );
 }
