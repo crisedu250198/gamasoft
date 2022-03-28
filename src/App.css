@@ -1371,6 +1371,30 @@ a {
                   justify-content: center; 
                    width: 100%;
                 }
+                .containerCart_presupuesto--Butones{
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  gap: 2rem;
+                  margin-left: 2rem;
+
+                }
+                .containerCart_presupuesto--Butones button{
+                  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                  cursor: pointer;
+                  border: none;
+                  outline: none;
+                  background-color: #05479D;
+                  border-color: #2983BC;
+                  color: #fff;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; 
+                }
+                .containerCart_presupuesto--Butones button:hover{
+                  transform: scale(1.1, 1.1);
+                  background: #2983BC;
+                }
+
 
                 
 /* --------------------------------------ESTILOS FOOTER-----------------------------------------------*/

@@ -35,13 +35,15 @@ const CartDetail = () => {
                         }
                         
         </div>
-        <div className="container containerCart_presupusto col-5">
+        <div className="container containerCart_presupuesto col-5">
             <h1>RESUMEN DE COMPRA:</h1>
             <h3>SUBTOTAL: {"$"+data.calcSubtotal()+".00"} </h3>
             <h3>ENVIO: $400.00</h3>
             <h2>TOTAL: {"$"+(data.calcSubtotal()+400)+".00"}</h2>
+            <div className="containerCart_presupuesto--Butones">
             <Link to="/finishCart"><button>FINALIZAR COMPRA</button></Link>
-            <button onClick={data.removeList}>Vaciar Carrito</button>
+            <button onClick={data.removeList}>VACIAR CARRITO</button>
+            </div>
         </div>
         </>
     );
