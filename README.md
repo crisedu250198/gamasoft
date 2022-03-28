@@ -10,6 +10,19 @@ Deberás Forkear este proyecto si quieres tener una copia en tu propio repositor
 Si lo que deseas es tener una copia en tu computador local, debes bajarte el archivo ZIP.
 
 ## Demostración ⚙️
+```
+Como comprar:
+```
+![Comprar](https://user-images.githubusercontent.com/62450970/160321301-b03b3cdf-01a1-4318-a602-2157de33f680.gif)
+
+```
+Como eliminar items del carrito:
+```
+![Eliminar items del carrito](https://user-images.githubusercontent.com/62450970/160320240-34ce26d4-c7b1-4120-bb79-8555f461586e.gif)
+```
+Como filtrar por categorias:
+```
+![Filtrar](https://user-images.githubusercontent.com/62450970/160320860-f4f89f0d-bc6d-476d-a004-d52e26469689.gif)
 
 
 
